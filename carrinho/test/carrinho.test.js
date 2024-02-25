@@ -1,4 +1,7 @@
+import { describe, expect, it } from '@jest/globals';
+// eslint-disable-next-line import/extensions
 import Carrinho from '../carrinho.js';
+// eslint-disable-next-line import/extensions
 import Item from '../item.js';
 
 describe('Testes do carrinho', () => {
@@ -32,7 +35,7 @@ describe('Testes do carrinho', () => {
   });
 
   it('Deve lançar erro ao finalizar compra com carrinho vazio', () => {
-    function englobaErroCarrinho(){
+    function englobaErroCarrinho() {
       const carrinho = new Carrinho();
       carrinho.finalizaCompra();
     }
